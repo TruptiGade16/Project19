@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="c" %>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,29 +27,28 @@
             </div>
             <div class="col-5" style="border: solid 2px black; border-radius: 10px; ">
                     <h3 style="text-align: center">Login</h3>
-                    </p>
-                    </p>
-                    <form style="font-weight: bold; margin-left: 80px;">
+                   
+                    <c:form action="candiLogin.htm" commandName="candi" style="font-weight: bold; margin-left: 80px;">
                         <table>
                         <tr> 
-                            <td>UserName</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" id="Fname" placeholder="Enter Name" style="padding-right: 100px;" ></td> 
+                            <td>User Name</td>
+                            <td style="padding-bottom: 10px;"><c:input path="candiUserName" class="beauti" placeholder="Enter User Name" style="padding-right: 100px;" /></td>
                         </tr>
 
-                        </p>
+                       
                         <tr>
                             <td>Password</td>
-                            <td style="padding-bottom: 10px;"><input type="password" class="beauti" id="Fname" placeholder="Enter Password" style="padding-right: 100px;"></td>
+                            <td style="padding-bottom: 10px;"><c:input path = "password" type="password" class="beauti"  placeholder="Enter Password" style="padding-right: 100px;"/></td>
                         </tr>
                         <tr>
                             <td ></td>
                             <td style="padding-bottom: 10px;padding-left: 30px">
-                                <input class="beauti"  type="submit" value="Login" formaction="" style="color: whitesmoke; border-radius: 7px; background-color: red; height: 35px; width: 100px;">
-                                <input class="beauti" type="submit" value="SignUp" formaction="Candidate_Registration.jsp"style="color: whitesmoke; border-radius: 7px; background-color: red; height: 35px; width: 100px;">
+                                <input class="beauti"  type="submit" value="Login" style="color: whitesmoke; border-radius: 7px; background-color: red; height: 35px; width: 100px;">
+                                <input class="beauti" type="submit" value="SignUp" formaction="prep_candiReg_form.htm"style="color: whitesmoke; border-radius: 7px; background-color: red; height: 35px; width: 100px;">
                             </td>
                         </tr>
                   </table>   
-                    </form>
+                    </c:form>
             </div>
             <div class="col-4">
                 

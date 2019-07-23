@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="c" %>   
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,66 +27,53 @@
             </div>
             <div class="col-6" style="border: solid 2px black; border-radius: 10px; ">
                     <h3 style="text-align: center">Candidate Registration</h3>
-                    </p>
-                    </p>
-                    <form style="font-weight: bold; margin-left: 80px;">
+                   
+                    <c:form action = "candiReg.htm" commandName="candi" style="font-weight: bold; margin-left: 80px;">
                         <table>
                         <tr> 
                             <td>First Name</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" id="Fname" placeholder="Enter FirstName" style="padding-right: 100px;" ></td> 
+                            <td style="padding-bottom: 10px;"><c:input path = "candiFname" class="beauti" placeholder="Enter FirstName" style="padding-right: 100px;" /></td> 
                         </tr>
 
-                        </p>
+                        
                         <tr >
                             <td>Last Name</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" placeholder="Enter LastName" style="padding-right: 100px; "></td>
+                            <td style="padding-bottom: 10px;"><c:input path = "candiLname" class="beauti" placeholder="Enter LastName" style="padding-right: 100px; "/></td>
                         </tr>
                         
                         <tr>
                             <td>City</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" placeholder="Enter City" style="padding-right: 100px;"></td>
+                            <td style="padding-bottom: 10px;"><c:input path = "candiCity" class="beauti" placeholder="Enter City" style="padding-right: 100px;"/></td>
                         </tr>
 
                         <tr>
                             <td>State</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" placeholder="Enter State" style="padding-right: 100px;"></td>
+                            <td style="padding-bottom: 10px;"><c:input path = "candiState" class="beauti" placeholder="Enter State" style="padding-right: 100px;"/></td>
                         </tr>
 
                         <tr>
                             <td>Email</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" placeholder="Enter Email" style="padding-right: 100px;"></td>
+                            <td style="padding-bottom: 10px;"><c:input path = "candiEmail" class="beauti" placeholder="Enter Email" style="padding-right: 100px;"/></td>
                         </tr>
 
                         <tr>
                             <td>Phone</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" placeholder="Enter phone" style="padding-right: 100px;"></td>
+                            <td style="padding-bottom: 10px;"><c:input path = "candiPhone" class="beauti" placeholder="Enter phone" style="padding-right: 100px;"/></td>
                         </tr>
 
-                        <tr>
-                            <td>Gender</td>
-                            <td style="padding-bottom: 10px;">
-                                <label>
-                                <input class="beauti"  type="radio" style="padding-right: 100px;" name="Gender">
-                                Male
-                            </label>
-                            <label>
-                                <input class="beauti"  type="radio" style="padding-right: 100px;" name="Gender">
-                                Female
-                            </label>
-                            </td>
-                        </tr>
+                      
                         <tr> 
                             <td>User Name</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" placeholder="Enter UserName" style="padding-right: 100px;" ></td> 
+                            <td style="padding-bottom: 10px;"><c:input path = "candiUserName" class="beauti" placeholder="Enter UserName" style="padding-right: 100px;" /></td> 
                         </tr>
                         <tr> 
                             <td>Password</td>
-                            <td style="padding-bottom: 10px;"><input class="beauti" placeholder="Enter Password" type="password" style="padding-right: 100px;" ></td> 
+                            <td style="padding-bottom: 10px;"><c:input path = "password" class="beauti" placeholder="Enter Password" type="password" style="padding-right: 100px;" /></td> 
                         </tr>
 
                         <tr>
                             <td>Photo</td>
-                            <td style="border: solid 0.5px rgb(216, 213, 213); border-radius: 7px;"><input type="file"></td>
+                            <td style="border: solid 0.5px rgb(216, 213, 213); border-radius: 7px;"><c:input path = "candiDocPath" type="file"/></td>
                             
                         </tr>
 
@@ -93,7 +82,7 @@
                             <td style="padding-left: 50px;padding-top: 10px;padding-bottom: 10px"><input class="beauti" type="submit" value="Register" style="color: whitesmoke; border-radius: 7px; background-color: red; height: 35px; width: 100px;"></td>
                         </tr>
                     </table>   
-                    </form>
+                    </c:form>
             </div>
             <div class="col-3">
                 

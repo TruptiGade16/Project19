@@ -39,6 +39,7 @@
 	<property name="annotatedClasses">
 		<list>
 			<value>com.cdac.everification.model.Organization</value>
+			<value>com.cdac.everification.model.Candidate</value>
 		</list>
 	</property>
 	</bean>

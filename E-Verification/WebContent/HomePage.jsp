@@ -24,7 +24,7 @@
      	<div class="row" style="height:500px; background-image:url(\homebackground.jpg);background-repeat:no-repeat;background-size:1500px ;">
    			<div class="col-1"></div>
    			<div class="col-11">
-   			<div class="row pt-5 pr-2"><button class="bg-primary text-light" style="height: 50px;width: 300px;border-radius: 25px;" onclick="window.location.href = 'Candidate/CandidateLogin.jsp';">Candidate</button></div>
+   			<div class="row pt-5 pr-2"><button class="bg-primary text-light" style="height: 50px;width: 300px;border-radius: 25px;" onclick="window.location.href = 'prep_candilogin_form.htm';">Candidate</button></div>
     		<div class="row pt-4"><button class="bg-primary text-light" style="height: 50px;width: 300px;border-radius: 25px;" onclick="window.location.href = 'prep_login_form.htm';">Organization</button></div>
      		<div class="row pt-4"><button class="bg-primary text-light" style="height: 50px;width: 300px;border-radius: 25px;" onclick="window.location.href = 'Admin/AdminLogin.jsp';">Admin</button></div>
    			</div>
